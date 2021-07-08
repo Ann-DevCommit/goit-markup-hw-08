@@ -1,0 +1,37 @@
+/* Hero */
+
+.hero__title {
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 0 auto 30px;
+
+  font-size: 26px;
+  line-height: 1.6154;
+  max-width: 360px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.3636;
+    max-width: 696px;
+  }
+}
+
+.hero__background {
+  @include flex-center();
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 400px;
+  background-color: var(--hero-background-grey);
+  background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+}
