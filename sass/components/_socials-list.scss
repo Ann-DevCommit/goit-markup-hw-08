@@ -5,6 +5,9 @@
 
 .socials-list__footer-list {
   @include flex-center($type: flex-start);
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
 }
 
 .socials-list__item {

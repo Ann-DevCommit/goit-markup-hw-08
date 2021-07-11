@@ -2,9 +2,14 @@
   color: var(--brand-blue-color);
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.1667;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo__rightpart {
@@ -17,9 +22,13 @@
 }
 
 .main-menu__logo {
-  margin-right: 93px;
+  margin-right: 88px;
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &:hover,
   &:focus {

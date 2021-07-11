@@ -36,6 +36,7 @@
   @media screen and (min-width: 768px) {
     align-items: flex-start;
     max-width: 354px;
+
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
@@ -49,6 +50,7 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 270px;
+
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -74,4 +76,22 @@
   line-height: 1.188;
   text-align: center;
   margin-bottom: 16px;
+}
+
+.team-list__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  @media screen and (max-width: 767px) {
+    height: 460px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 374px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 260px;
+  }
 }

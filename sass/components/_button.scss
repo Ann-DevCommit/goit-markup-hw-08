@@ -10,6 +10,11 @@
 }
 
 .lead-button {
+  @include flex-center();
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+
   @extend %button;
   font-weight: 700;
   line-height: 1.875;
@@ -25,19 +30,21 @@
     background-color: var(--hero-button-hover);
   }
 
-  &__hero-modal {
-    display: block;
-    padding: 10px 32px;
-  }
-  &__hero {
-    margin: 0 auto;
-  }
+  // &__hero-modal {
+  //   display: block;
+  //   padding: 10px 32px;
+  // }
+  // &__hero {
+  //   margin: 0 auto;
+  //   margin: auto;
+  // }
 
-  &__subscribe {
-    @include flex-center();
-    justify-content: center;
-    padding: 10px;
-  }
+  // &__subscribe {
+  //   @include flex-center();
+  //   justify-content: center;
+  //   padding: 10px;
+  //   margin: auto;
+  // }
   &__subscribe-title {
     margin-right: 10px;
   }
@@ -45,12 +52,13 @@
     fill: currentColor;
   }
 
-  &__modal-form {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  // &__modal-form {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   margin: auto;
+  // }
 }
 
 .project-button-list {
@@ -124,3 +132,39 @@
     margin: auto;
   }
 }
+
+.mobile-menu-button {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  fill: var(--black);
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+
+  &__icon {
+    margin: auto;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--brand-blue-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+// .mobile-menu-button .icon-close-mobile-menu {
+//   display: none;
+// }
+
+// .mobile-menu-button.is-open .icon-close-mobile-menu {
+//   display: block;
+// }
+
+// .mobile-menu-button.is-open .icon-mobile-menu {
+//   display: none;
+// }
